@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Gastos e Ingresos</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="layout">
+        <h1 id="titulo">CONTROL DE GASTOS E INGRESOS</h1>
+        <div class="card1">
+            <div class="container">
+                <div class="ingresos-gastos-container"></div>
+                <h4 class="dinero-actual">Tu dinero actual</h4>
+                <h2 id="dinero-actual">$0.00</h2>
+                <div class="subcard-card1">
+                    <div class="ingresos">
+                        <h4>Ingresos</h4>
+                        <p id="dinero-plus" class="dinero-plus">+$0.00</p>
+                    </div>
+                    <div class="gastos">
+                        <h4>Gastos</h4>
+                        <p id="dinero-minus" class="dinero-minus">+$0.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card2">
+            <h3>Historial</h3>
+            <hr>
+            <ul id="lista" class="lista">
+                <!-- aqui elementos agregados -->
+                <!-- <li class="minus">
+                    Cash <span>-$400</span><button class="delete-btn">x</button>
+                </li> -->
+            </ul>
+        </div>
+        <div class="nueva-transaccion">
+            <h3>Agregar nueva transacción</h3>
+            <hr>
+            <form id="form">
+                <div class="form-control">
+                    <label for="nombre-transaccion">Ingresa el Nombre de la transacción</label>
+                    <input type="text" id="text" placeholder="Ingresa un titulo...">
+                </div>
+                <div class="form-control">
+                    <label for="cantidad">Cantidad <br>(Poner con signo menos si es un gasto)</label>
+                    <input type="number" id="cantidad" placeholder="Ingresa la cantidad...">
+                </div>
+                <div class="boton">
+                    <button class="btn btn-success">Agregar transacción</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
