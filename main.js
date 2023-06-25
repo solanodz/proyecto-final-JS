@@ -16,7 +16,7 @@ function agregarTransaccion(e) {
     e.preventDefault();
 
     if (text.value.trim() === '' || cantidad.value.trim() === '') {
-        alert('Por favor, introduce un texto que describa la transaccion y la cantidad de dinero');
+        alert('Por favor, ingresa un texto que describa la transaccion y la cantidad de dinero.');
     } else {
         const transaccion = {
             id: generarID(),
