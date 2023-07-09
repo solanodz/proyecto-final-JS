@@ -16,60 +16,109 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body>
-    <div class="layout">
-        <h1 id="titulo">CONTROL DE GASTOS E INGRESOS</h1>
-        <div class="card1">
-            <div class="container">
-                <div class="ingresos-gastos-container"></div>
-                <h4 class="dinero-actual">Tu dinero actual</h4>
-                <h2 id="dinero-actual">$0.00</h2>
-                <div class="subcard-card1">
-                    <div class="ingresos">
-                        <h4>Ingresos</h4>
-                        <p id="dinero-plus" class="dinero-plus">+$0.00</p>
+    <div class="layout container">
+        <div class="control container">
+            <h1 class="titulo container">CONTROL DE GASTOS E INGRESOS</h1>
+            <div class="card1">
+                <div class="container">
+                    <h4>Tu dinero actual</h4>
+                    <div class="mispesos">
+                        <h2 id="dinero-actual">$0.00</h2>
                     </div>
-                    <div class="gastos">
-                        <h4>Gastos</h4>
-                        <p id="dinero-minus" class="dinero-minus">+$0.00</p>
+                    <div class="subcard-card1">
+                        <div class="ingresos">
+                            <h4>Ingresos</h4>
+                            <p id="dinero-plus" class="dinero-plus">+$0.00</p>
+                        </div>
+                        <div class="gastos">
+                            <h4>Gastos</h4>
+                            <p id="dinero-minus" class="dinero-minus">+$0.00</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="nueva-transaccion">
+                <h3>Agregar nueva transacción</h3>
+                <hr>
+                <form id="form">
+                    <div class="form-control">
+                        <label for="nombre-transaccion">Ingresa el Nombre de la transacción</label>
+                        <input type="text" id="text" placeholder="Ingresa un titulo...">
+                    </div>
+                    <div class="form-control">
+                        <label for="cantidad">Cantidad <br>(Poner con signo menos si es un gasto)</label>
+                        <input type="number" id="cantidad" placeholder="Ingresa la cantidad...">
+                    </div>
+                    <div class="boton">
+                        <button class="btn btn-success">Agregar transacción</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="card2">
+        <div class="card2 container">
             <h3>Historial</h3>
             <hr>
-            <ul id="lista" class="lista">
-                <!-- aqui elementos agregados -->
-                <!-- <li class="minus">
-                    Cash <span>-$400</span><button class="delete-btn">x</button>
-                </li> -->
+            <div id="fecha">
+                <p>fecha</p>
+            </div>
+            <ul id="lista" class="lista movimientos">
             </ul>
         </div>
-        <div class="nueva-transaccion">
-            <h3>Agregar nueva transacción</h3>
-            <hr>
-            <form id="form">
-                <div class="form-control">
-                    <label for="nombre-transaccion">Ingresa el Nombre de la transacción</label>
-                    <input type="text" id="text" placeholder="Ingresa un titulo...">
-                </div>
-                <div class="form-control">
-                    <label for="cantidad">Cantidad <br>(Poner con signo menos si es un gasto)</label>
-                    <input type="number" id="cantidad" placeholder="Ingresa la cantidad...">
-                </div>
+        <div class="cambioMonedas container">
+            <h1 class="titulo container">COMPRA VENTA DE DOLAR BLUE</h1>
+            <div class="container">
+                <p id="actualizacion"></p>
+                <p id="cotizaciones"></p>
+            </div>
+            <div class="container">
+                <h3>Cambiar de pesos a dolar blue</h3>
+                <p><i>Se toma el valor de dolar compra</i></p>
+                <label for="pesos-input">Ingresa la cantidad de pesos</label><br>
+                <input type="number" name="pesos" id="pesos-input">
+                <p id="resultado"></p>
                 <div class="boton">
-                    <button class="btn btn-success">Agregar transacción</button>
+                    <button class="btn btn-success boton" id="comprar-btn">Comprar dolares</button>
                 </div>
-            </form>
+            </div>
+
+
+
+            <div class="container">
+                <h3>Cambiar de dólares a peso argentino (dólar blue)</h3>
+                <p><i>Se toma el valor de dolar venta</i></p>
+                <label for="dolares-input">Ingresa la cantidad de dólares</label><br>
+                <input type="number" name="dolares" id="dolares-input">
+                <p id="resultado2"></p>
+                <div class="boton">
+                    <button class="btn btn-success boton" id="vender-btn">Vender dolares</button>
+                </div>
+            </div>
+
+            <!-- <div class="container">
+                <h3>Cambiar de dolar blue a pesos</h3>
+                <label for="pesos-input">Ingresa la cantidad de dolares</label><br>
+                <input type="number" name="pesos" id="dolar-input">
+                <p id="resultado2"></p>
+                <div class="boton">
+                    <button class="btn btn-success boton" id="convertir-btn2">Convertir</button>
+                </div>
+            </div> -->
         </div>
+
     </div>
     <script src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <!-- Sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>
