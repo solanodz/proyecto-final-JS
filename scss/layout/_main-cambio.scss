@@ -9,14 +9,11 @@
     -webkit-backdrop-filter: blur( 20px );
     border-radius: 20px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    // height: fit-content;
     height: 675px;
     overflow-y: auto;
     border-radius: 20px;
     padding: 10px;
 }
-
-
 .container-actualizacion{
     background: rgba( 255, 255, 255, 1 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -31,7 +28,6 @@
         margin-bottom: 10px;
     }
 }
-
 .container-comprar{
     background: rgba( 255, 255, 255, 1 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -45,8 +41,6 @@
         width: 300px;
     }
 }
-
-
 .container-vender{
     background: rgba( 255, 255, 255, 1 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -60,20 +54,16 @@
         width: 300px;
     }
 }
-
 button#comprar-btn{
     margin: 10px;
 }
-
 button#vender-btn{
     margin: 10px;
 }
-
 #resultado{
     font-weight: 600;
     color: #3592FF;
 }
-
 #resultado2{
     font-weight: 600;
     color: #3592FF;

@@ -8,12 +8,10 @@ h1.titulo{
     padding: 10px;
     margin: 10px 0;
 }
-
 .container-control{
     background: #FFF;
     padding: 10px;
     margin: 10px;
-    /* width: fit-content; */
     background: rgba( 255, 255, 255, 1 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 20px );
@@ -21,14 +19,6 @@ h1.titulo{
     border-radius: 20px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     height: fit-content;
-
-
-//     background: rgba( 255, 255, 255, 0.3 );
-// box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-// backdrop-filter: blur( 6px );
-// -webkit-backdrop-filter: blur( 6px );
-// border-radius: 20px;
-// border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .tu-dinero{
     border-radius: 18px;
@@ -58,7 +48,6 @@ h1.titulo{
         }
     }
 }
-
 div.subcard-card1{
     border-radius: 18px;
     background: #343434;
@@ -71,7 +60,6 @@ div.subcard-card1{
         color: #FFF;
     }
 }
-
 p#dinero-plus{
     color: #2EC03D;
 text-align: center;
@@ -86,7 +74,6 @@ font-size: 30px;
 font-weight: 600;
 margin: 0;
 }
-
 div.nueva-transaccion{
     background: rgba( 255, 255, 255, 1 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
