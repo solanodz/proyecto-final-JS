@@ -1,0 +1,129 @@
+h1.titulo{
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    border-radius: 20px;
+    background: #343434;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.container-control{
+    background: #FFF;
+    padding: 10px;
+    margin: 10px;
+    /* width: fit-content; */
+    background: rgba( 255, 255, 255, 1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    height: fit-content;
+
+
+//     background: rgba( 255, 255, 255, 0.3 );
+// box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+// backdrop-filter: blur( 6px );
+// -webkit-backdrop-filter: blur( 6px );
+// border-radius: 20px;
+// border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.tu-dinero{
+    border-radius: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    background: rgba( 255, 255, 255, 1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    .container{
+        h2#dinero-actual{
+            color: #3592FF;
+            text-align: left;
+            padding: 10px;
+            font-size: 35px;
+            font-weight: 700;
+        }
+        h4{
+            text-align: left;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}
+
+div.subcard-card1{
+    border-radius: 18px;
+    background: #343434;
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    h4{
+        color: #FFF;
+    }
+}
+
+p#dinero-plus{
+    color: #2EC03D;
+text-align: center;
+font-size: 30px;
+font-weight: 600;
+margin: 0;
+}
+p#dinero-minus{
+    color: #FF4444;
+text-align: center;
+font-size: 30px;
+font-weight: 600;
+margin: 0;
+}
+
+div.nueva-transaccion{
+    background: rgba( 255, 255, 255, 1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin: 10px 0;
+    padding: 10px;
+    div.form-control{
+        color: #343434;
+        text-align: left;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        padding: 5px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label{
+        font-size: 14px;
+    }
+    input{
+        border: 0;
+        padding: 5px 10px;
+        text-align: left;
+        font-weight: 400;
+        border-radius: 10px;
+        background-color: #b8b8b8;
+        color: #FFF;
+        color: #000;
+        font-weight: 500;
+    }
+    h3{
+        padding: 10px;
+        font-weight: 600;
+        margin: 0;
+    }
+}

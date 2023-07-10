@@ -126,8 +126,8 @@ function obtenerDolar() {
             const cotizacionesBlue = datos.blue;
             const ultimaActualizacion = datos.last_update;
             document.getElementById('actualizacion').innerText = `(última actualización: ${ultimaActualizacion})`;
-            document.getElementById('cotizaciones').innerText = `
-            Dolar promedio: $${cotizacionesBlue.value_avg}
+            document.getElementById('cotizaciones').innerText =
+                `Dolar promedio: $${cotizacionesBlue.value_avg}
             Dolar compra: $${cotizacionesBlue.value_buy}
             Dolar venta: $${cotizacionesBlue.value_sell}
             `;
@@ -153,13 +153,8 @@ function convertirPesosADolarBlue() {
         });
 }
 
-// Obtener referencia al botón de conversión
 const convertirBtn = document.getElementById('comprar-btn');
 convertirBtn.addEventListener('click', convertirPesosADolarBlue);
-
-
-
-
 
 
 // funcion para convertir de dolar blue a peso
@@ -173,38 +168,12 @@ function convertirDolarAPeso() {
             const dolarBlue = data.blue.value_sell;
             const conversion = dolares * dolarBlue;
             const resultado = document.getElementById('resultado2');
-            resultado.textContent = `$${dolares} dólares equivalen a aproximadamente AR$${conversion.toFixed(2)} pesos argentinos (dólar blue).`;
+            resultado.textContent = `U$D${dolares} equivalen a aproximadamente AR$${conversion.toFixed(2)} pesos argentinos (dólar blue).`;
         })
         .catch(error => {
             console.error('Ocurrió un error al obtener los datos:', error);
         });
 }
 
-// Obtener referencia al botón de conversión
 const convertirBtn2 = document.getElementById('vender-btn');
 convertirBtn2.addEventListener('click', convertirDolarAPeso);
-
-
-
-
-
-/* // Obtener el div
-var div = document.getElementById('miDiv');
-
-// Función para verificar y ajustar el scroll
-function ajustarScroll() {
-    // Obtener la altura del contenido del div
-    var alturaContenido = div.scrollHeight;
-
-    // Verificar si el contenido supera la altura máxima
-    if (alturaContenido > parseInt(getComputedStyle(div).maxHeight)) {
-        div.classList.add('scrollable'); // Aplicar la clase CSS para mostrar el scroll
-    } else {
-        div.classList.remove('scrollable'); // Remover la clase CSS si no es necesario el scroll
-    }
-}
-
-// Ejecutar la función cuando se agreguen elementos al div
-// Aquí debes agregar tu lógica para agregar elementos al div
-// Después de agregar los elementos, llama a la función ajustarScroll()
-ajustarScroll(); */
